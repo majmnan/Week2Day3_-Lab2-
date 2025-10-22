@@ -1,7 +1,5 @@
 import java.util.*;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     static Scanner in = new Scanner(System.in);
     public static void main(String[] args) {
@@ -19,7 +17,7 @@ public class Main {
         System.out.println("The array: " + Arrays.toString(nums));
         System.out.print("Enter a number to display it's occurrence: ");
         int targetNumber = in.nextInt();
-        System.out.println(targetNumber + " occurs " + occurenceOf(targetNumber,nums) + " times. ");
+        System.out.println(targetNumber + " occurs " + occurrenceOf(targetNumber,nums) + " times. ");
         System.out.println("\n========================================================================================\n");
 
 
@@ -104,14 +102,14 @@ public class Main {
 
         //Question6 --------------
         System.out.print("Enter the minimum value of the range of random: ");
-        int minBoundry = in.nextInt();
+        int minBoundary = in.nextInt();
         System.out.print("Enter the maximum value of the range:");
-        int maxBoundry = in.nextInt();
+        int maxBoundary = in.nextInt();
         System.out.print("Enter the number of random number generated:");
         int noPrinting = in.nextInt();
         System.out.println("The generated numbers are: ");
         for(int i = 0; i<noPrinting; i++){
-            System.out.print(random(minBoundry,maxBoundry) + " ");
+            System.out.print(random(minBoundary,maxBoundary) + " ");
         }
         System.out.println("\n========================================================================================\n");
 
@@ -145,7 +143,7 @@ public class Main {
         return longestWords;
     }
 
-    public static int occurenceOf(int target, int[] nums){
+    public static int occurrenceOf(int target, int[] nums){
         int occurrence = 0;
         for(int num : nums){
             if (num == target){
